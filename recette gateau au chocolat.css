@@ -1,0 +1,160 @@
+/* * est pour s'adresser à tous les elements, overflow est fait pour gérer ce qui dépasse. */
+
+* {
+    overflow: auto;
+ }
+
+body {
+    background-color: #2fd2f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.recette {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 12px 27px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 16px ;
+    box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.709);
+    font-size: 25px;
+}
+
+div.recette {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;
+}
+
+div.gras {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+div.mise_en_forme {
+    background-color: white;
+    margin: 60px 10% 50px 10%;
+    padding: 0px 30px 20px 30px;
+    /*max-width: 550px ;
+    min-width: 550px;*/
+    min-height: 750px;
+    min-width: 400px;
+    box-shadow: 5px 5px 15px 10px rgba(7, 7, 7, 0.479);
+    overflow: visible
+}
+
+p.description {
+    text-align: center;
+    max-width: 550px ;
+    display: inline-block;
+}
+
+/* display: inline-block sert a avoir plus de controle sur la position du block et pouvoir appliquer le text-align: center du div.description  */
+
+div.description {
+    text-align: center;
+}
+
+div.ligne {
+    width: 200px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.tableau {
+    position: relative;
+}
+/* position: relative permet d'avoir plus de liberte sur la position et position: absolute permet de ne plus prendre de place et donc de se positionner en bas de la div meme si il y a deja un element  */
+table.tableau {
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    background-color: #5094e6af;
+    height: 70px;
+}
+
+table.tableau td {
+    font-size: 16px;
+    vertical-align: top;
+    padding-top: 4px;
+}
+
+table.tableau th {
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+img.info {
+    object-fit: cover;
+    display: block;
+    max-height: 400px;
+    min-height: 200px;
+    background-color: lightgrey;
+}
+
+div.colonne1 {
+    display: inline-block;
+}
+
+div.colonne2 {
+    float: right ;
+}
+
+div.colonnes {
+   width: 45%;
+   margin-top: 20px;
+}
+
+div.colonnes h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-bottom: 8px solid #5094e6af;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 8px;
+}
+
+div.ingredients p {
+    border: 1px solid rgb(183, 181, 181);
+    padding: 14px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+ }
+
+.tr td {
+    padding: 11px;
+    vertical-align: top;
+    text-align: center;
+    height: 40px;
+ }
+
+ p.numero {
+    display: block;
+    text-align: center;
+    background-color: #5094e6af;
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    box-sizing: border-box; /* sert a calculer la taille autrement, ici pour que la taille du truc ne soit pas agrandie par le padding */
+    border-radius: 50%; /* sert a faire des arrondis et si on arrondi trop ca fait un cercle */
+ }
+
