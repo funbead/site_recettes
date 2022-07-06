@@ -44,12 +44,9 @@ h1 {
 
 div.mise_en_forme {
     background-color: white;
-    margin: 60px 10% 50px 10%;
-    padding: 0px 30px 20px 30px;
-    max-width: 550px ;
-    min-width: 550px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
     min-height: 750px;
-    min-width: 400px;
     box-shadow: 5px 5px 15px 10px rgba(7, 7, 7, 0.479);
     overflow: visible
 }
@@ -83,17 +80,17 @@ table.tableau {
     bottom: 0;
     color: rgb(255, 255, 255);
     background-color: #5094e6af;
-    height: 70px;
+    height: 50px;
 }
 
 table.tableau td {
-    font-size: 16px;
+    font-size: 12px;
     vertical-align: top;
     padding-top: 4px;
 }
 
 table.tableau th {
-    font-size: 18px;
+    font-size: 14px;
     vertical-align: bottom;
 }
 
@@ -109,12 +106,8 @@ div.colonne1 {
     display: inline-block;
 }
 
-div.colonne2 {
-    float: right ;
-}
-
 div.colonnes {
-   width: 45%;
+   width: 100%;
    margin-top: 20px;
 }
 
@@ -158,3 +151,78 @@ div.ingredients p {
     border-radius: 50%; /* sert a faire des arrondis et si on arrondi trop ca fait un cercle */
  }
 
+
+
+
+
+
+
+
+/* style pour ordinateur */
+/* la ligne ci-dessous signifie, si la largeur minimale est de 768 pixels alors : */
+ @media only screen and (min-width: 768px) {
+
+    div.mise_en_forme {
+        background-color: white;
+        margin: 60px 10% 50px 10%;
+        padding: 0px 30px 20px 30px;
+        min-height: 750px;
+        min-width: 400px;
+        box-shadow: 5px 5px 15px 10px rgba(7, 7, 7, 0.479);
+        overflow: visible
+    }
+
+    table.tableau {
+        position: absolute;
+        bottom: 0;
+        color: rgb(255, 255, 255);
+        background-color: #5094e6af;
+        height: 70px;
+    }
+
+    table.tableau td {
+        font-size: 16px;
+        vertical-align: top;
+        padding-top: 4px;
+    }
+    
+    table.tableau th {
+        font-size: 18px;
+        vertical-align: bottom;
+    }
+
+    div.colonne1 {
+        display: inline-block;
+    }
+    
+    div.colonne2 {
+        float: right ;
+    }
+    
+    div.colonnes {
+       width: 45%;
+       margin-top: 20px;
+    }
+    
+    div.colonnes h2 {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        border-bottom: 8px solid #5094e6af;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-bottom: 8px;
+    }
+
+ } 
+
+
+ @media only screen and (min-width: 900px) {
+
+    div.mise_en_forme {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 645px;
+    }
+
+ }
